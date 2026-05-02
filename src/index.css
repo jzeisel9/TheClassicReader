@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-brand: 'Fraunces', ui-serif, Georgia, 'Times New Roman', serif;
+  --font-read: 'Spectral', ui-serif, Georgia, 'Times New Roman', serif;
+
+  --color-paper: #f4f0e6;
+  --color-paper-deep: #e8e0d0;
+  --color-ink: #1a1714;
+  --color-ink-soft: #44403c;
+  --color-ink-faint: #78716c;
+  --color-seal: #8f2d2d;
+  --color-seal-soft: #b45309;
+  --color-veil: rgba(26, 23, 20, 0.45);
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply m-0 h-dvh max-h-dvh overflow-hidden bg-paper text-ink font-read text-[1.05rem] leading-[1.65];
+  }
+
+  #root {
+    @apply h-full min-h-0;
+  }
+}
